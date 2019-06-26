@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <form method="POST">{% csrf_token %}
+        {{ urlform.as_p }}
+        <input type="submit" value="Short URL">
+    </form>
+</body>
+</html>
